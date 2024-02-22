@@ -13,7 +13,7 @@
         <!-- <script src="{% static 'https://cdn.jsdelivr.net/npm/sweetalert2@11' %}"></script> -->
         <link
             rel="icon"
-            type="image/png"
+            type="{% static 'image/png' %}"
             sizes="32x32"
             href="{% static 'images/favicon.ico' %}"
         />
@@ -253,7 +253,7 @@
                         
                         <img
                             class="left"
-                            src="{% static 'images/index-faq-links-2.png'%}"
+                            src="{% static 'images/index-faq-links-2.png' %}"
                             alt="index-faq-links-2"
                         />
                     </div>
@@ -309,7 +309,7 @@
                 <section class="bottom">
                     <ul>
                         <li>
-                            <img src="{% static 'images/check.svg'%}" alt="Check" />
+                            <img src="{% static 'images/check.svg' %}" alt="Check" />
                             <small>Tracking your rent is 100% free</small>
                         </li>
                         <li>
@@ -408,7 +408,7 @@
                         properties from your phone.
                     </p>
                     <a href="" class="button">
-                        <img src="{%  static 'images/appstore.svg'%}" alt="appstore" />
+                        <img src="{%  static 'images/appstore.svg' %}" alt="appstore" />
                         App Store
                     </a>
                 </section>
