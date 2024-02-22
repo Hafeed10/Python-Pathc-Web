@@ -155,12 +155,7 @@ header div.left ul li {
 header div.left ul li:last-child {
 	margin-right: 0;
 }
-header div.left ul li a {
-	
-}
-header div.right {
-	
-}
+
 header div.right ul {
 	display: flex;
 	align-items: center;
@@ -312,9 +307,7 @@ header div.right ul li:last-child{
 	display: flex;
 	justify-content: space-between;
 }
-#middle ul li {
-	
-}
+
 #middle ul li:nth-child(odd) {
 	margin-top: 80px;
 }
@@ -431,8 +424,7 @@ header div.right ul li:last-child{
     font-weight: 700;
     max-width: 300px;
 }
-#faq section.content {
-}
+
 #faq section.content section.tab_head {
     margin-bottom: 20px;
 }
@@ -458,8 +450,8 @@ header div.right ul li:last-child{
     border-bottom: 1px solid #23d3d3;
 }
 
-#faq section.content section.tab_body {
-}
+
+
 #faq section.content section.tab_body div.item {
     display: none;
 }
@@ -510,8 +502,7 @@ header div.right ul li:last-child{
     display: -o-flex;
     display: flex;
 }
-#faq section.bottom div.img_container img {
-}
+
 #faq section.bottom div.content {
     display: -webkit-flex;
     display: -moz-flex;
@@ -522,8 +513,7 @@ header div.right ul li:last-child{
     width: 67%;
     justify-content: space-between;
 }
-#faq section.bottom div.content div.item {
-}
+
 #faq section.bottom div.content div.item img {
     display: inline-block;
     margin-bottom: 20px;
@@ -560,9 +550,7 @@ header div.right ul li:last-child{
 	font-weight: 700;
 	white-space: nowrap;
 }
-#press div.right {
-	
-}
+
 #press div.right ul {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -589,9 +577,7 @@ header div.right ul li:last-child{
 	border-radius: 50%;
 	width: 100px;
 }
-#press div.right ul li span {
-	
-}
+
 
 #promo {
 	background: var(--main-bg-color);
@@ -599,9 +585,7 @@ header div.right ul li:last-child{
 	position: relative;
 	z-index: 1;
 }
-#promo section.wrapper {
-	
-}
+
 #promo section.top  {
 	text-align: center;
 }
@@ -695,12 +679,7 @@ footer section.top div.item h3 {
 	color: #fff;
 	margin-bottom: 20px;
 }
-footer section.top div.item ul {
-	
-}
-footer section.top div.item ul li {
-	
-}
+
 footer section.top div.item ul li a {
 	padding: 6px 0;
 	display: inline-block;
@@ -754,9 +733,7 @@ footer section.bottom p.left a:hover {
 	color: #189191;
 	text-decoration:underline;
 }
-footer section.bottom div.social {
-	
-}
+
 footer section.bottom div.social ul {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -784,7 +761,7 @@ footer section.bottom div.social ul li a img {
 }
 #cover {
 	height: 100vh;
-	background: url(../images/mobile-devices-bg-2.jpg) no-repeat;
+	/* background: url(../images/mobile-devices-bg-2.jpg) no-repeat; */
 	background-size: contain;
 	padding: 80px 0;
 	position: fixed;
