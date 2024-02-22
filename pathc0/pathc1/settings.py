@@ -1,18 +1,12 @@
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-
 SECRET_KEY = 'django-insecure-a9ahsub+hbo(#o*&oan&m@dc0s@(1tiu1lqh14x-c!6q*gk_*s'
-
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -22,9 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    
-    'pathc2'
-    
+    'pathc2',  # Your custom app
 ]
 
 MIDDLEWARE = [
@@ -42,7 +34,7 @@ ROOT_URLCONF = 'pathc1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates'],  # Directory for your HTML templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -57,15 +49,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pathc1.wsgi.application'
 
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -82,8 +71,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -92,16 +79,12 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
 MEDIA_URL = '/media/'
-MEDID_ROOT = BASE_DIR / 'media'
-
-
+MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
