@@ -15,8 +15,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'pathc2',  # Your custom app
+    'pathc2'
 ]
 
 MIDDLEWARE = [
@@ -34,7 +33,7 @@ ROOT_URLCONF = 'pathc1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],  # Directory for your HTML templates
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
