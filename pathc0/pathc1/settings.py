@@ -17,12 +17,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-   
     'pathc2',
-   
+    'example',  # Add your additional apps here
 ]
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
-WSGI_APPLICATION = 'vercel_app.wsgi.app'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
