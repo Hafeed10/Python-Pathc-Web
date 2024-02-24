@@ -8,7 +8,8 @@ SECRET_KEY = 'your_secret_key_here'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['your_domain.com']
+ALLOWED_HOSTS = ['your_domain.com', '127.0.0.1', 'localhost', '.vercel.app']
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -50,7 +51,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'pathc1.wsgi.application'
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app']
 
 DATABASES = {
     'default': {
@@ -91,4 +91,3 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
