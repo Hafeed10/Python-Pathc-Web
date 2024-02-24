@@ -1,12 +1,14 @@
+# settings.py
+
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-a9ahsub+hbo(#o*&oan&m@dc0s@(1tiu1lqh14x-c!6q*gk_*s'
+SECRET_KEY = 'your_secret_key_here'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['your_domain.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -15,7 +17,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pathc2'
+    'pathc2',
+    'example',  # Add your additional apps here
 ]
 
 MIDDLEWARE = [
@@ -33,7 +36,7 @@ ROOT_URLCONF = 'pathc1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,3 +90,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
