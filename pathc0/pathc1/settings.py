@@ -8,7 +8,7 @@ SECRET_KEY = 'your_secret_key_here'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['your_domain.com', '127.0.0.1', 'localhost', '.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 INSTALLED_APPS = [
@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pathc2',
-    'example',  # Add your additional apps here
+    'pathc1',  # Add your additional apps here
 ]
 
 MIDDLEWARE = [
