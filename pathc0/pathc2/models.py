@@ -10,10 +10,10 @@ FAQ_TYPE = [
     ]
 
 class Testimonial(models.Model):
-    name = models.CharField(max_length=255)
-    designation = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, default='Hafeex')
+    designation = models.CharField(max_length=255, default='software development')
     image = models.ImageField(upload_to="testimonials/", )
-    description = models.TextField()
+    description = models.TextField(blank=True,null=True)
 
     def __str__(self):
         return self.name
@@ -40,7 +40,7 @@ class Faqs(models.Model):
     
 
 class Subscribe(models.Model):
-     email = models.EmailField()
+     email = models.EmailField(unique=True,primary_key=True)
 
      def __str__(self):
          return self.email

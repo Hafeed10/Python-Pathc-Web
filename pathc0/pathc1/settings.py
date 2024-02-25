@@ -8,10 +8,7 @@ SECRET_KEY = 'your_secret_key_here'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
-ALLOWED_HOSTS = ['127.0.0.1', 'your_domain.com']
-
-
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
