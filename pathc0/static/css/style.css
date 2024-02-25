@@ -761,7 +761,7 @@ footer section.bottom div.social ul li a img {
 }
 #cover {
 	height: 100vh;
-	/* background: url(../images/mobile-devices-bg-2.jpg) no-repeat; */
+	background: url(../images/mobile-devices-bg-2.jpg) no-repeat;
 	background-size: contain;
 	padding: 80px 0;
 	position: fixed;
