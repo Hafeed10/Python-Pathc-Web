@@ -1,19 +1,12 @@
 from pathlib import Path
 import os
-import os
 
-
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'your_secret_key_here'
 
-DEBUG = True 
-
-
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
+DEBUG = True
 
 ALLOWED_HOSTS = ['vercel.app', '127.0.0.1', 'localhost']
 
@@ -25,7 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pathc2',
-      # Add your additional apps here
+    # Add your additional apps here
 ]
 
 MIDDLEWARE = [
@@ -43,7 +36,7 @@ ROOT_URLCONF = 'pathc1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR / 'templates'],  # Use Path object for consistency
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -57,26 +50,19 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'pathc1.wsgi.application'
-# WSGI_APPLICATION = 'pathc1.wsgi.app'
 
-
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # Use Path object for consistency
     }
 }
 
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
+# Password validation
+# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -93,20 +79,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_TZ = True
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    BASE_DIR / 'static',  # Use Path object for consistency
 ]
 
+# Media files (Uploaded files)
+# https://docs.djangoproject.com/en/3.2/topics/files/
+
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = BASE_DIR / 'media'  # Use Path object for consistency
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -1,5 +1,6 @@
 # models.py
 
+# import uuid 
 from django.db import models
 
 FAQ_TYPE = [
@@ -44,3 +45,17 @@ class Subscribe(models.Model):
 
      def __str__(self):
          return self.email
+     
+
+# class TestModel(models.Model):
+#     id = models.BigAutoField()   
+
+# is_student = models.BooleanField(default=False)
+
+# dob = models.DateTimeField(auto_now_add=True)
+
+# document = models.FileField(upload_to="document")
+
+
+# # uuid field 
+# id = models.UUIDField(primary_key=True,default="uuid.uuid4", editable=False)
