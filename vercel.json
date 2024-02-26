@@ -1,15 +1,8 @@
 {
-    "builds": [
-      {
-        "src": "pathc1/wsgi.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "pathc1/wsgi.py"
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "pathc1/wsgi.py"
+    }
+  ]
+}
