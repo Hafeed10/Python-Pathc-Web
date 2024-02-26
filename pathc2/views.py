@@ -36,11 +36,9 @@ def subscribe(request):
 
 
 
-def application(environ, start_response):
-    """
-    Simple WSGI application.
-    """
-    status = '200 OK'
-    headers = [('Content-Type', 'text/plain')]
-    start_response(status, headers)
-    return [b"Hello, World! This is my Django WSGI application."]
+# def application(environ, start_response):
+   
+#     status = '200 OK'
+#     headers = [('Content-Type', 'text/plain')]
+#     start_response(status, headers)
+#     return [b"Hello, World! This is my Django WSGI application."]
